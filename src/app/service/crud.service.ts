@@ -11,7 +11,7 @@ export class CrudService {
 
   constructor(private http: HttpClient) {
     // this.serviceURL = 'http://localhost:3000/tasks';
-    this.serviceURL = 'https://todo-list-amber-ten.vercel.app/';
+    this.serviceURL = window.location.origin;
   }
 
   addTask(task: Task): Observable<Task> {
